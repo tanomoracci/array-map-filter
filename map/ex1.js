@@ -27,6 +27,16 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+
+  let length = strings;
+  let strlength = length.map(function(item,n){
+    let str = item.length;
+    return item + " contains " + str + " characters";
+  }
+  );
+  return strlength;
+ 
+  
 }
 
 // If you need, you can always visualize the result with a console.log.
